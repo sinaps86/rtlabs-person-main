@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PersonMain></PersonMain>
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import PersonMain from './components/person-main.vue'
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld,
+    PersonMain
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  .person__page {
+    background-color: lightblue;
+  }
+  .person__header {
+    background-color: #ffbd00;
+  }
+  .person__nav-bar {
+    margin: 0 160px;
+  }
+  .person__header-content {
+    margin: 0 0 0 160px;
+  }
+  .person__content {
+
+  }
+  .person__footer {
+
+  }
 </style>
